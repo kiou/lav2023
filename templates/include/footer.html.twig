@@ -1,0 +1,41 @@
+<div class="section section12">
+    <div class="inner">
+
+        <div class="cols">
+            <div class="col col1">
+                <img src="{{ asset('img/logo-luc-pinelli-complet.png') }}">
+                <p>Enteprisé située à Chomerac, je me déplace dans un rayon de 45Km autour de mon bureau, le meilleur moyen d'avoir plus d'informations c'est de me contacter</p>
+            </div>
+
+            <div class="col col2">
+                <h3>Liens utiles</h3>
+                <ul>
+                    {% if action is defined %}
+                        <li><a href="#" class="linknav" data-nav=".section2">Mes services</a></li>
+                        <li><a href="#" class="linknav" data-nav=".section6">Mes actualités</a></li>
+                        <li><a href="#" class="linknav" data-nav=".section7">Mes vidéos</a></li>
+                        <li><a href="#" class="linknav" data-nav=".section10">Me contacter</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                    {% else %}
+                        <li><a href="{{ path('app_index') }}#services">Mes services</a></li>
+                        <li><a href="{{ path('app_actualites') }}">Mes actualités</a></li>
+                        <li><a href="{{ path('app_youtubes') }}">Mes vidéos</a></li>
+                        <li><a href="{{ path('app_index') }}#contact">Me contacter</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="col col3">
+                <h3>Retrouvez moi</h3>
+                <a href="https://www.facebook.com/informatiqueavecvous/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@lucpinelli07" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/PinelliLuc" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.com/maps/place/Pinelli+Luc+-+L'informatique+avec+vous/@44.667717,4.5848932,11z/data=!4m6!3m5!1s0x629232924880b1a7:0x955624a836ca31e8!8m2!3d44.667717!4d4.5848932!16s%2Fg%2F11qbd68j1_" target="_blank"><i class="fab fa-google"></i></a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</div>

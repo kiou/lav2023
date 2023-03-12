@@ -1,0 +1,50 @@
+<nav class="navigation section">
+    <div class="inner">
+            
+        <div class="navigationLeft">
+            {% if action is defined %}
+                <a href="#" class="linknav" data-nav=".content">
+                    <img src="{{ asset('img/logo-luc-pinelli-blanc.png') }}">
+                </a>
+            {% else %}
+                <a href="{{ path('app_index') }}">
+                    <img src="{{ asset('img/logo-luc-pinelli-blanc.png') }}">
+                </a>
+            {% endif %}
+        </div>
+
+        <div class="navigationRight">
+            {% if action is defined %}
+                <a href="#" class="linknav" data-nav=".section2">Me services</a>
+                <a href="#" class="linknav" data-nav=".section6">Mes actualités</a>
+                <a href="#" class="linknav" data-nav=".section7">Mes vidéos</a>
+                <a href="#" class="linknav" data-nav=".section10">Me contacter</a>
+            {% else %}
+                <a href="{{ path('app_index') }}#services">Me services</a>
+                <a href="{{ path('app_actualites') }}">Mes actualités</a>
+                <a href="{{ path('app_youtubes') }}">Mes vidéos</a>
+                <a href="{{ path('app_index') }}#contact">Me contacter</a>
+            {% endif %}
+        </div>
+
+        <div class="navigationRightMobileMenu">
+            <p><img src="{{ asset('img/menu-mobile.png') }}"> Menu</p>
+        </div>
+
+        <div class="mobilemenucontent">
+            {% if action is defined %}
+                <a href="#" class="linknav" data-nav=".section2">Me services</a>
+                <a href="#" class="linknav" data-nav=".section6">Mes actualités</a>
+                <a href="#" class="linknav" data-nav=".section7">Mes vidéos</a>
+                <a href="#" class="linknav" data-nav=".section10">Me contacter</a>
+            {% else %}
+                <a href="{{ path('app_index') }}#services">Me services</a>
+                <a href="{{ path('app_actualites') }}">Mes actualités</a>
+                <a href="{{ path('app_youtubes') }}">Mes vidéos</a>
+                <a href="{{ path('app_index') }}#contact">Me contacter</a>
+            {% endif %}
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</nav>

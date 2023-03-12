@@ -1,0 +1,38 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block content %}
+
+    <div class="section page liste">
+        <div class="inner">
+
+            <div class="titre centre">
+                <h2><span>Mes</span> vidéos</h2>
+                <p>Pour continuer la formation à votre rythme</p>
+            </div>
+
+            <div class="videos">
+                {% for video in youtubes %}
+                    <div class="video">
+                        <img src="{{ asset('img/miniature/' ~ video.image) }}">
+
+                        <div class="videoFiltre"></div>
+
+                        <div class="videoContenu">
+                            <p class="flag">{{ video.categorie }}</span>
+                            <p class="flag timer">{{ video.time }}</p>
+                            <div class="videoPlay">
+                                <a href="{{ video.link }}" target="_blank"><img src="{{ asset('img/play.svg')}}"></a>
+                            </div>
+                            <div class="videoTitre">
+                                <a href="{{ video.link }}" target="_blank"><h3>{{ video.title }}</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+{% endblock %}

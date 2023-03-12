@@ -1,0 +1,363 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block content %}
+
+    <div class="section section1">
+        <div class="inner">
+
+            <div class="section1Left">
+                <img src="{{ asset('img/logo-lp-blanc.png') }}" class="logoPl">
+                <h1><span>Luc</span>Pinelli</h1>
+                <h2>L'informatique avec vous, à domicile</h2>
+
+                <div class="sectionContent">
+                    <p>Tu as besoin d'une aide, d'une formation ou d'une mise à jour de ton matériel.</p>
+                    <p>Tu souhaites remplacer ton téléphone et/ou mettre en place un forfait qui te correspond.</p>
+                    <p>Tu as besoin de conseils pour un achat neuf ou reconditionné</p>
+                    <p>Tu veux avoir ton propre site internet pour plus de visibilité.</p>
+                </div>
+
+                <div class="sectionContent2">
+                    <p>Dans tous les cas je me déplace chez toi et je t'accompagne dans la<br>résolution de tes problèmes ou dans la création de tes projets.</p>
+                </div>
+
+                <div class="sectionContent3">
+                    <p>
+                    <a href="https://www.google.com/search?q=luc+pinelli&rlz=1C1UEAD_frFR980FR980&oq=luc+pinelli&aqs=chrome.0.69i59j0i512j0i22i30l2j69i65j69i60l2j69i65.1666j0j4&sourceid=chrome&ie=UTF-8#lrd=0x629232924880b1a7:0x955624a836ca31e8,1,,,," target="_blank"><strong>+ 40 avis Google</strong></a>
+                    <img src="{{ asset('img/etoile-jaune.png') }}">
+                    <img src="{{ asset('img/etoile-jaune.png') }}">
+                    <img src="{{ asset('img/etoile-jaune.png') }}">
+                    <img src="{{ asset('img/etoile-jaune.png') }}">
+                    <img src="{{ asset('img/etoile-jaune.png') }}">
+                    </p>
+                </div>
+
+                <div class="sectionContent4">
+                    <a href="#" class="linknav btn" data-nav=".section2">mes services <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="linknav btn" data-nav=".section10">me contacter <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <img src="{{ asset('img/illustration-portable-header.png') }}" class="illustration1">
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="section section2" id="services">
+        <div class="inner">
+
+            <div class="section2Left">
+                <div class="titre left">
+                    <h2><span>Mes</span> services</h2>
+                    <p>Besoin d'aide ? consulte la liste de mes services</p>
+                </div>
+
+                <div class="sectionContent5">
+                    <p>Je m'appel Luc Pinelli, et je suis dans le domaine de l'informatique depuis maintenant plus de 12 ans, j'ai monté mon entreprise à Chomérac pour t'accompagner dans ce monde toujours plus compléxe et complet de "l'informatique".</p>
+                    <p>Je me déplace à domicile pour t'éviter de transporter tout ton materiel, et je prends le temps de t'écouter et de t'accompagner pour résoudre tes divers problémes </p>
+                </div>
+
+                <a href="#" class="linknav btn" data-nav=".services">La liste de mes services <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="section2Right">
+                <img src="{{ asset('img/photo-luc-pinelli-pro.png') }}" class="section2Image1"> 
+                <img src="{{ asset('img/illustration-outils-luc-pinelli.png') }}" class="section2Image2">
+                <img src="{{ asset('img/back-section2-right.png') }}" class="section2Image3">            
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="section section3">
+        <div class="inner">
+
+            <div class="services">
+
+                <div class="serviceLigneCentre"></div>
+
+                <div class="service">
+                    <img src="{{ asset('img/service-formation-illustration.png') }}">
+                    <h3>La formation</h3>
+                    <div class="sectionContent6">
+                        <p>Les choses ne sont pas claires pour toi? tu souhaites approfondir certains aspects? je te propose une formation qui correspond à ton niveau</p>
+                        <p>On prendra le temps ensemble d'avancer dans ta formation avec des outils adaptés sur un sujet que tu auras choisi</p>
+                    </div>
+                    <a href="#" class="btn disabled">bientôt disponible <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service">
+                    <img src="{{ asset('img/service-intervention-illustration.png') }}">
+                    <h3>Diagnostic & intervention</h3>
+                    <div class="sectionContent6">
+                        <p>Ton ordinateur est lent ou tu viens de l'acheter et tu ne comprends pas tout? il te manque des logiciels pour ce que tu souhaites faire? Ton imprimante ne veut pas fonctionner ?</p>
+                        <p>Je me déplace chez toi et je fais un diagnostic "gratuit". Je résouds le probléme avec toi (chez toi) si c'est possible ou alors je récupére ta machine que je te rends comme neuve entre 48 et 72 heures</p>
+                    </div>
+                    <a href="/actualite/donne-une-seconde-vie-a-ton-ordinateur/59" class="btn">en savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service">
+                    <img src="{{ asset('img/service-telephonie-illustration.png') }}">
+                    <h3>La téléphonie</h3>
+                    <div class="sectionContent6">
+                        <p>Tu souhaites changer de téléphone? neuf ou reconditionné? tu ne sais pas combien tu payes en forfait ou alors il est trop cher pour toi?</p>
+                        <p>Je t'apporte des solutions et on fait le point ensemble pour voir ce qui te correspond le mieux, il existe des solutions adaptées à chacun.</p>
+                    </div>
+                    <a href="" class="btn disabled">bientôt disponible <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service">
+                    <img src="{{ asset('img/service-site-illustration.png') }}">
+                    <h3>Création de site</h3>
+                    <div class="sectionContent6">
+                        <p>Tu souhaites entrer dans le monde d'internet et pour cela il te faut un site? tu cherches un accompagnement complet du projet de base à la réalisation de ton site en passant par l'utilisation des réseaux sociaux?</p>
+                        <p>J'ai développé une solution moderne, clé en main qui te permet d'être autonome avec ton outil à un prix réaliste</p>
+                    </div>
+                    <a href="" class="btn disabled">bientôt disponible <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="section section5">
+        <img src="{{ asset('img/mot-parallax-informatique.svg') }}" class="mot mot3">
+    </div>
+
+    <div class="section section4">
+        <img src="{{ asset('img/mot-parallax-avec-vous.svg') }}" class="mot mot1">
+        <img src="{{ asset('img/mot-parallax-domicile.svg') }}" class="mot mot2">
+
+        <div class="triangle triangle2"></div>
+        <div class="inner">
+            <img src="{{ asset('img/illustration-portable-contenu.png') }}" class="illustration2">        
+
+            <div class="clear"></div>    
+        </div>
+        <div class="triangle triangle1"></div>
+    </div>
+
+    <div class="section section6">
+        <div class="inner">
+
+            <div class="actualitesContent">
+
+                <div class="titre centre">
+                    <h2><span>Mes</span> derniéres actualités</h2>
+                    <p>Découvrez l'informatique avec vous en image</p>
+                </div>
+
+                <div class="actualites">
+
+                    {% for actualite in actualites %}
+                        <div class="actualite">
+                            <div class="actualiteImage">
+                                <img src="{{ asset('img/miniature/' ~ actualite.image) }}">
+
+                                <div class="actualiteDate">
+                                    <p class="flag">{{actualite.created|localizeddate('none', 'none', null, null, 'MMMM Y')}}</p>
+                                </div>
+                            </div>
+                            <div class="actualiteContenu">
+                                <a href="{{ path('app_actualites_view',{'slug': actualite.slug, 'id': actualite.id})}}"><h3>{{ actualite.titre }}</h3></a>
+                                <p>{{ actualite.resume}}</p>
+                            </div>
+
+                            <a href="{{ path('app_actualites_view',{'slug': actualite.slug, 'id': actualite.id})}}" class="btn link">lire la suite</a>
+                        </div>
+                    {% endfor %}
+                    
+                </div>
+
+            </div>
+
+            <div class="viewAll">
+                <a href="{{ path('app_actualites') }}" class="btn">tous les articles  <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <img src="{{ asset('img/back-actualites.png') }}" class="backActualites">
+
+        </div>
+    </div>
+
+    <div class="section section7" id="videos">
+        <div class="triangle triangle3"></div>
+        <div class="inner">
+
+            <div class="titre centre">
+                <h2><span>Mes</span> derniéres vidéos</h2>
+                <p>Pour continuer la formation à votre rythme</p>
+            </div>
+
+            <div class="videos owl-one owl-carousel">
+                {% for video in videos %}
+                    <div class="video">
+                        <img src="{{ asset('img/miniature/' ~ video.image) }}">
+
+                        <div class="videoFiltre"></div>
+
+                        <div class="videoContenu">
+                            <p class="flag">{{ video.categorie }}</span>
+                            <p class="flag timer">{{ video.time }}</p>
+                            <div class="videoPlay">
+                                <a href="{{ video.link }}" target="_blank"><img src="{{ asset('img/play.svg')}}"></a>
+                            </div>
+                            <div class="videoTitre">
+                                <a href="{{ video.link }}" target="_blank"><h3>{{ video.title }}</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="viewAll">
+                <a href="{{ path('app_youtubes') }}" class="btn">toutes les vidéos  <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+        <div class="triangle triangle4"></div>
+    </div>
+
+    <div class="section section8">
+        <div class="inner">
+        
+            <div class="titreCommunaute">
+                <img src="{{ asset('img/rejoignez-la-communaute.svg') }}">
+            </div>
+
+            <div class="acrocheFacebook">
+                <h2><span>Suivez-moi</span></h2>
+                <h2>sur Facebook</h2>
+                <h3><span>Pour être au courant des dernières actualités</span></h3>
+
+                <a href="https://www.facebook.com/informatiqueavecvous/" target="_blank" class="btn">suivre la page Facebook <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <img src="{{ asset('img/back-facebook.png') }}" class="backFacebook">
+
+        </div>
+
+        <img src="{{ asset('img/illustration-portable-facebook.png') }}" class="illustration3">
+        
+    </div>
+
+    <div class="section section9">
+        <div class="triangle triangle5"></div>
+        <div class="inner">
+
+            <div class="titre centre">
+                <h2><span>Leurs</span> avis</h2>
+                <p>Ce que pense mes clients de mon intervention</p>
+            </div>
+
+            <div class="avis owl-two owl-carousel">
+                {% for avi in avis %}
+                    <div class="avi">
+                        <div class="aviContenu">
+                            <p>{{ avi.contenu }}</p>
+                        </div>
+                        <div class="aviAvatar">
+                            <p>{{ avi.prenom|first ~' '~ avi.nom|first}}</p>
+                        </div>
+                        <div class="aviNom">
+                            <p>{{ avi.prenom ~' '~ avi.nom}}</p>
+                        </div>
+                        <div class="aviNote">
+                            {% for i in 1.. avi.note %}
+                               <img src="{{ asset('img/etoile-jaune.png') }}">
+                            {% endfor %}
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="viewAll">
+                <a href="https://www.google.com/search?q=luc+pinelli&rlz=1C1UEAD_frFR980FR980&oq=luc+pinelli&aqs=chrome.0.69i59j0i512j0i22i30l2j69i65j69i60l2j69i65.1666j0j4&sourceid=chrome&ie=UTF-8#lrd=0x629232924880b1a7:0x955624a836ca31e8,1,,,," target="_blank" class="btn">tous les avis  <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="triangle triangle6"></div>
+    </div>
+
+    <div class="section section10" id="contact">
+
+        <div class="inner">
+
+            <div class="section10Left">
+                <img src="{{ asset('img/illustration-contact.png') }}" class="illustration4">
+
+                <div class="titre left">
+                    <h2><span>Me</span> contacter</h2>
+                    <p>Par email, par téléphone, c'est comme tu veux</p>
+                </div>
+
+                <div class="sectionContent8">
+                    <p>Tu peux me laisser un message sur mon téléphone, utiliser la messagerie de Facebook, m'envoyer une email ou encore le formulaire juste ici</p>
+                    <p>Je prends le temps de regarder mes messages entre chaque intervention, je te répondrai très rapidement et on conviendra au besoin d'un rendez vous ensemble</p>
+                </div>
+
+                <div class="sectionContent7">
+                    <p><a href="tel:+33650233497">06 50 23 34 97</a></p>
+                    <p><a href="mailto:pinelli.luc@outlook.fr">pinelli.luc@outlook.fr</a></p>
+                </div>
+            </div>
+
+            <div class="section10Right">
+            
+                {{ form_start(form) }}
+
+                    {{ form_errors(form) }}
+
+                    <div class="form-error">
+                        {{ form_errors(form.nom) }}
+                    </div>
+                    {{ form_widget(form.nom) }}
+
+                    <div class="form-error">
+                        {{ form_errors(form.tel) }}
+                    </div>
+                    {{ form_widget(form.tel) }}
+
+                    <div class="form-error">
+                        {{ form_errors(form.email) }}
+                    </div>
+                    {{ form_widget(form.email) }}
+
+                    <div class="form-error">
+                        {{ form_errors(form.message) }}
+                    </div>
+                    {{ form_widget(form.message) }}
+
+                    <div class="form-error">
+                        {{ form_errors(form.captcha) }}
+                    </div>
+                    {{ form_widget(form.captcha) }}
+
+                    <div class="formsend">
+                        {{ form_widget(form.Envoyer) }}
+                    </div>
+
+                    {{ form_rest(form) }}
+
+                {{ form_end(form) }}
+
+            </div>
+
+            <img src="{{ asset('img/back-contact.png') }}" class="backContact">
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="section section11">
+        <div class="triangle triangle7"></div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d181567.75863634425!2d4.5654576!3d44.678856!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x955624a836ca31e8!2sPinelli%20Luc%20-%20L&#39;informatique%20avec%20vous!5e0!3m2!1sfr!2sfr!4v1653932139752!5m2!1sfr!2sfr" width="100%" height="545px" style="border:0; overflow:hidden;height:545px;width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+{% endblock %}
