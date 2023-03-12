@@ -79,7 +79,7 @@ $( document ).ready(function() {
         $('.mobilemenucontent').toggleClass('active');
     });
 
-    $('.disabled').on('click',function(e){
+    $('.disabledlink').on('click',function(e){
         e.preventDefault();
 
         Swal.fire({
